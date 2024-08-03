@@ -1,0 +1,6 @@
+RegisterNetEvent('loadout:DisplayNotification')
+AddEventHandler('loadout:DisplayNotification', function(text)
+    SetNotificationTextEntry('STRING')
+    AddTextComponentString(text)
+    DrawNotification(false, false)
+end)
